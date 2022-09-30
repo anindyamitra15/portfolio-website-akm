@@ -300,7 +300,7 @@ html[light-mode="dark"] {
 
 .dark-theme .navbar-nav .nav-link,
 .dark-theme .navbar-brand {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.684);
 }
 
 .dark-theme .nav-link:hover{

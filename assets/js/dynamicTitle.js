@@ -1,7 +1,7 @@
 window.onload = function () {
   const favicon = document.getElementById("favicon");
   let pageTitle = document.title;
-  let attentionMessage = "Come back";
+  let attentionMessage = "Visit again";
 
   document.addEventListener("visibilitychange", function (e) {
     let isPageActive = !document.hidden;
@@ -26,7 +26,7 @@ window.onload = function () {
       favicon.href = "./assets/images/dp_male.svg";
     } else {
       document.title = attentionMessage;
-      favicon.href = "./assets/images/folded.png";
+      favicon.href = "./assets/images/smiling-face-with-halo_1f607.png";
     }
   }
 };
