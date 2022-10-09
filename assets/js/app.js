@@ -24,11 +24,12 @@ let header = $(`
 <div class="collapse navbar-collapse " id="navbarSupportedContent">
   <ul class="navbar-nav ml-auto" id = "navbar-content">
    <li class="nav-item nav-item-hover"><a class="nav-link" href="index.html">Home</a></li>
-   <li class="nav-item nav-item-hover"><a class="nav-link" href="experience.html">Experience</a></li>
-   <li class="nav-item nav-item-hover"><a class="nav-link" href="projects.html">Projects</a></li>
-   <li class="nav-item nav-item-hover"><a class="nav-link" href="research.html">Research</a></li>
+   <!--li class="nav-item nav-item-hover"><a class="nav-link" href="experience.html">Experience</a></li-->
    <li class="nav-item nav-item-hover"><a class="nav-link" href="education.html">Education</a></li>
-   <li class="nav-item nav-item-hover"><a class="nav-link" href="https://hashnode.com/" target="_blank">Blogs</a></li>
+   <li class="nav-item nav-item-hover"><a class="nav-link" href="resume.html">Resume</a></li>
+   <li class="nav-item nav-item-hover"><a class="nav-link" href="projects.html">Projects</a></li>
+   <!--li class="nav-item nav-item-hover"><a class="nav-link" href="research.html">Research</a></li-->
+   <!--li class="nav-item nav-item-hover"><a class="nav-link" href="https://hashnode.com/" target="_blank">Blogs</a></li-->
    <li class="nav-item">
    <input type="checkbox" id="dark_toggler" class="dark_toggler" aria-label="Toggle Light Mode" onclick="toggle_light_mode()" checked>
    </li>
@@ -324,7 +325,7 @@ if (localStorage.getItem("lightMode") == "light") {
 }
 
 function toggle_light_mode() {
-  console.log(localStorage.getItem("lightMode"));
+  // console.log(localStorage.getItem("lightMode"));
   var app = document.getElementsByTagName("HTML")[0];
   var nav = document.getElementById("navbar");
   if (localStorage.lightMode == "dark") {

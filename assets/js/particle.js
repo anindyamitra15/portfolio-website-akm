@@ -3,14 +3,14 @@
 particlesJS("particles-js", {
   particles: {
     number: {
-      value: 80,
+      value: 60,
       density: {
         enable: true,
-        value_area: 900,
+        value_area: 1200,
       },
     },
     color: {
-      value: ["#2EB67D", "#ECB22E", "#E01E5B", "#36C5F0"],
+      value: ["#adebeb", "#cccccc", "#33cccc", "#8c8c8c"],
     },
     shape: {
       type: "circle",
@@ -94,6 +94,8 @@ particlesJS("particles-js", {
   },
   retina_detect: true,
 });
+
+// scrolling text
 const allElements = document.querySelectorAll(".animated-text");
 
 // It checks if there is at least one element
@@ -131,7 +133,7 @@ if (allElements.length > 0) {
         let spans = txtElement.childNodes;
 
         // It sets the interval between each letter showing
-        const letterInterval = setInterval(activeLetter, 70);
+        const letterInterval = setInterval(activeLetter, 150);
 
         function activeLetter() {
           spans[count].classList.add("active");
@@ -140,7 +142,7 @@ if (allElements.length > 0) {
           if (count === spans.length) {
             clearInterval(letterInterval);
 
-            // It waits 4 seconds to start erasing the word
+            // It waits 6 seconds to start erasing the word
             setTimeout(() => {
               eraseText();
             }, 600);
@@ -149,7 +151,7 @@ if (allElements.length > 0) {
 
         function eraseText() {
           // It sets the interval between each letter hiding
-          let removeInterval = setInterval(removeLetter, 40);
+          let removeInterval = setInterval(removeLetter, 80);
           count--;
 
           function removeLetter() {

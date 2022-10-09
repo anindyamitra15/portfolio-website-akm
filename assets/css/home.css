@@ -71,6 +71,7 @@ body{
 .animated-text span {
   display: none;
   line-height: 1;
+  /* color: #00aba2; */
 }
 
 .animated-text span.active {
@@ -78,6 +79,7 @@ body{
 }
 
 .animated-text:after {
+  /* color: #00aba2; */
   content: ".";
   display: inline;
   width: 6px;
