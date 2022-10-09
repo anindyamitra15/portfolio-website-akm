@@ -3,7 +3,10 @@
   src: url(../fonts/Agustina.woff);
 }
 
-
+html {
+  --scroll-bar-color: #38a2a1;
+  --scroll-bar-hover-color: #31bbb9;
+}
 /*CSS variable declaration for light/dark mode*/
 
 html[data-theme="light"] {
@@ -73,28 +76,27 @@ html[data-theme="dark"] {
 }
 
 ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px #bb86fc;
+  -webkit-box-shadow: inset 0 0 3px var(--scroll-bar-color);
   border-radius: 2px;
   background: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: 2px;
+  border-radius: 1px;
   max-height: 10px;
-  -webkit-box-shadow: inset 0 0 6px #bb86fc;
-  background: #bb86fc;
+  -webkit-box-shadow: inset 0 0 6px var(--scroll-bar-color);
+  background: var(--scroll-bar-color);
   transition: 0.3s;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #ca9eff;
-  
+  background: var(--scroll-bar-hover-color);
 }
 
 /* Custom Scrollbar for Mozilla Firefox*/
 html{
   overflow-y: visible;
-  scrollbar-color: #ca9eff #f1f1f1;
+  scrollbar-color: var(--scroll-bar-hover-color) #f1f1f1;
   scrollbar-width: auto;
 }
 
